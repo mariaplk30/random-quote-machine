@@ -1,0 +1,155 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+@font-face {
+  font-family: "Sketch Block";
+  src: url("http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot");
+  src: url("http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("http://tangledindesign.com/codepen/fonts/sketch_block-webfont.woff")
+      format("woff"),
+    url("http://tangledindesign.com/codepen/fonts/sketch_block-webfont.ttf")
+      format("truetype"),
+    url("http://tangledindesign.com/codepen/fonts/sketch_block-webfont.svg#SketchBlockBold")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Museo 700";
+  src: url("http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot");
+  src: url("http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.woff")
+      format("woff"),
+    url("http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.ttf")
+      format("truetype"),
+    url("http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.svg#SketchBlockBold")
+      format("svg");
+}
+
+@font-face {
+  font-family: "CallunaRegular";
+  src: url("http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.eot");
+  src: url("http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.woff")
+      format("woff"),
+    url("http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.ttf")
+      format("truetype"),
+    url("http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.svg#CallunaRegular")
+      format("svg");
+}
+
+.wrapper {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  align-items: center;
+  position: relative;
+}
+
+.card-title {
+  color: #fff;
+  width: 700px;
+  font: 1.9em CallunaRegular;
+  letter-spacing: 0.075em;
+  float: left;
+  padding: 30px 0 10px 25px;
+  margin: 0;
+  border-top: 2px dotted #ffffff;
+  border-bottom: 2px dotted #ffffff;
+}
+
+.card-title:first-line {
+  font: 1.85em "Sketch Block";
+  color: #fff79e;
+}
+
+.card-title:first-letter {
+  color: #fff79e;
+  font-size: 2em;
+  text-transform: uppercase;
+  line-height: 0.52em;
+  margin-right: -18px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-text {
+  color: #fff;
+  float: right;
+  margin-top: 40px;
+  font: 0.7em CallunaRegular;
+  letter-spacing: 0.15em;
+}
+
+.card-text:first-letter {
+  color: #fff79e;
+  font-size: 1.2em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+}
+
+#new-quote {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  box-shadow: inset 0px -50px 0px 0px #ffffff;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  color: #666666;
+  font-family: Courier New;
+  font-size: 21px;
+  padding: 16px 39px;
+  text-decoration: none;
+}
+
+#tweet-quote {
+  font-size: 50px;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  color: #fff;
+}
+
+@media screen and (max-device-width: 480px) {
+  .wrapper {
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #new-quote {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    box-shadow: inset 0px -50px 0px 0px #ffffff;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    color: #666666;
+    font-family: Courier New;
+    font-size: 15px;
+    padding: 8px 15px;
+    text-decoration: none;
+  }
+
+  #tweet-quote {
+    font-size: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+  }
+
+  .card-title {
+    color: #fff;
+    width: 350px;
+    font: 1.9em CallunaRegular;
+    letter-spacing: 0.075em;
+    padding: 30px 0 10px 25px;
+    border-top: 2px dotted #ffffff;
+    border-bottom: 2px dotted #ffffff;
+  }
+}
